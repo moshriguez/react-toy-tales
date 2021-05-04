@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 class ToyCard extends Component {
-  state = {
-    likes: this.props.toy.likes
-  }
+  // state = {
+  //   likes: this.props.toy.likes
+  // }
 
   render() {
     const { name, image, likes, id } = this.props.toy
@@ -14,8 +14,9 @@ class ToyCard extends Component {
         <p>{likes} Likes </p>
         <button className="like-btn" 
         onClick={() => {
-          this.props.likeBtn(id, this.state.likes)
-          this.setState({likes: likes + 1})}}
+          this.props.likeBtn(id, likes)
+          // this.setState({likes: likes + 1})
+        }}
         >Like {'<3'}</button>
         <button className="del-btn" onClick={() => this.props.deleteToy(id)}>Donate to GoodWill</button>
       </div>
