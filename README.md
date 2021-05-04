@@ -16,3 +16,18 @@ After the ToyCard components are on the page, consider building out the function
 After you have the create functionality built out, consider building out the delete functionality. When you click on the `Donate to Goodwill` button, the ToyCard that you clicked on should be removed from the DOM as well as the backend.
 
 After that, consider building out the like functionality. Clicking on the button should increase the number of likes on the DOM as well as the backend.
+
+Outline: 
+- App
+    - Header
+    - ToyForm (hidden unless button was clicked)
+    - ToyContainer
+        - ToyCard
+
+json object shape
+{
+      "id": 1,
+      "name": "Woody",
+      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+      "likes": 5
+    }
